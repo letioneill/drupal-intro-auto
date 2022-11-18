@@ -37,7 +37,7 @@ class MyTestService {
 	public function getMessage() {
 		$return_message = '';
 		// If message variable is not empty.
-		if (empty($this->message)) {
+		if (!empty($this->message)) {
 			$return_message = $this->message;
 		}
 		
